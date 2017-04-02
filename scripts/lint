@@ -1,0 +1,44 @@
+#!/bin/bash
+
+REPORTS_PATH="${CIRCLE_TEST_REPORTS:-./reports}/junit"
+
+printf "Running ESLint:\n\n"
+if [ "$IS_CI" = "true" ]; then
+  # JUnit Report
+  eslint \
+    --format junit \
+    --output-file $REPORTS_PATH/eslint.xml \
+    --ext .js \
+    --ext .jsx \
+    .
+else
+  # CLI Report
+  eslint \
+    --format stylish \
+    --ext .js \
+    --ext .jsx \
+    .
+fi
+eslintResult=$?
+
+printf "Running SASS linter:\n\n"
+if [ "$IS_CI" = "true" ]; then
+  sass-lint \
+    --config .sass-lint.yml \
+    --format junit \
+    --output $REPORTS_PATH/sass-lint.xml
+else
+  sass-lint \
+    --config .sass-lint.yml \
+    --format stylish \
+    --verbose
+fi
+sassLintResult=$?
+
+printf "Running pug linter:\n\n"
+pug-lint ./templates/*.pug
+pugLintResult=$?
+
+echo "Finished linting."
+
+! (( $eslintResult | $sassLintResult | $pugLintResult ))

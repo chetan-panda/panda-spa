@@ -1,0 +1,28 @@
+#!/bin/bash
+
+printf "Running initial build:\n\n"
+
+./scripts/build
+
+printf "\n\nWatching with webpack, pug, and browser-sync:\n\n"
+
+trap 'printf "\n\nKilling webpack, pug, and browser-sync.\n"; kill $(jobs -p); wait $WEBPACK_PID; wait $PUG_PID; wait $BROWSER_SYNC_PID' 2 9
+
+NODE_ENV=development \
+webpack --progress --colors --watch &
+WEBPACK_PID=$!
+
+pug \
+  -o ./dist \
+  -O ./templates/options.json \
+  -w \
+  -P \
+  ./templates &
+PUG_PID=$!
+
+node ./scripts/browser-sync-spa.js &
+BROWSER_SYNC_PID=$!
+
+wait $WEBPACK_PID
+wait $PUG_PID
+wait $BROWSER_SYNC_PID

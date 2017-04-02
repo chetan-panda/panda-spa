@@ -1,0 +1,19 @@
+#!/bin/bash
+
+printf "Building prod with webpack:\n\n"
+
+NODE_ENV=production \
+webpack -p --progress --colors
+webpackResult=$?
+
+printf "Building with pug-cli:\n\n"
+
+pug \
+  -o ./dist \
+  -O ./templates/options.json \
+  ./templates
+pugResult=$?
+
+printf "\nFinished build."
+
+! (( $webpackResult | $pugResult ))

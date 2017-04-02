@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should check default app structure 1`] = `
+<div>
+  <div
+    id="content-manager"
+  >
+    <div
+      className="page"
+      id="page-home"
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,5 @@
+options:
+  config-file: ./node_modules/sass-lint-config-ctrl/.sass-lint.yml
+  merge-default-rules: true
+files:
+  include: '/lib/**/*.scss'
