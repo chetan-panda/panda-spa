@@ -30,7 +30,6 @@ class ContentManager extends CtrlComponent {
       <div id='content-manager'>
         <PageHome
           content={this.getContent('pageHome')}
-          isLoggedIn={false}
           routeFilter={(route) => route.length === 0}
         />
       </div>

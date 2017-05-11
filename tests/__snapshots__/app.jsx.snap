@@ -8,7 +8,23 @@ exports[`should check default app structure 1`] = `
     <div
       className="page"
       id="page-home"
-    />
+    >
+      <div
+        className="ui header"
+        style={
+          Object {
+            "color": "#003057",
+            "fontFamily": "Montserrat",
+          }
+        }
+      />
+      <div
+        className="ui hidden divider"
+      />
+      <div
+        className="ui hidden divider"
+      />
+    </div>
   </div>
 </div>
 `;
