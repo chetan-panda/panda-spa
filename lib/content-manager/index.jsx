@@ -1,4 +1,5 @@
 import CtrlComponent from 'ctrl-react-component'
+import Footer from '../footer'
 import PageHome from '../page/page-home'
 import PageIssue from '../page/page-issue'
 import PageIssues from '../page/page-issues'
@@ -57,6 +58,7 @@ class ContentManager extends CtrlComponent {
             (route) => route[0] === 'issues' && route.length === ISSUE_LENGTH
           }
         />
+        <Footer/>
       </div>
     )
   }

@@ -261,6 +261,46 @@ exports[`should check default app structure 1`] = `
         </div>
       </div>
     </div>
+    <div
+      className="ui basic inverted segment"
+      style={
+        Object {
+          "backgroundColor": "#003666",
+          "paddingBottom": "1.5em",
+          "paddingTop": "1.5em",
+        }
+      }
+    >
+      <div
+        className="ui center aligned container"
+      >
+        <p>
+          <b>
+            Paid for by the Committee to Elect Chetan Panda
+          </b>
+          <br />
+          <a
+            href="mailto:info@panda2018.com"
+            style={
+              Object {
+                "color": "#fff",
+              }
+            }
+          >
+            <i
+              aria-hidden="true"
+              className="mail icon"
+            />
+            info@panda2018.com
+          </a>
+        </p>
+        <p>
+          If you'd  like to send a contribution by mail, please address it to:
+          <br />
+          Committee to Elect Chetan Panda, PO Box 29416 Austin, Texas 78755
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 `;
