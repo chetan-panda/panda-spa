@@ -91,24 +91,29 @@ class Navigation extends CtrlComponent {
               <Grid className='mobile only'>
                 <Dropdown
                   className={isLogoDark ? 'dropdown-dark' : 'dropdown-light'}
+                  defaultValue={`/${router.route[router.route.length - 1]}`}
                   icon='content'
                   simple
                   text=' '
                   options={[
                     {
-                      text: 'About'
+                      key: 'about'
+                    , text: 'About'
                     , value: '/about'
                     }
                   , {
-                      text: 'Issues'
+                      key: 'issues'
+                    , text: 'Issues'
                     , value: '/issues'
                     }
                   , {
-                      text: 'Join Us'
+                      key: 'join-us'
+                    , text: 'Join Us'
                     , value: 'http://eepurl.com/cVtGir'
                     }
                   , {
-                      text: 'Donate'
+                      key: 'donate'
+                    , text: 'Donate'
                     , value: 'https://secure.actblue.com/donate/panda2018'
                     }
                   ]}
