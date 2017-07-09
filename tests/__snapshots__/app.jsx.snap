@@ -45,46 +45,162 @@ exports[`should check default app structure 1`] = `
                 width={undefined}
               />
             </div>
-            <a
-              className="link item"
-              onClick={[Function]}
+            <div
+              className="ui grid computer only"
             >
-              About
-            </a>
-            <a
-              className="link item"
-              onClick={[Function]}
-            >
-              Issues
-            </a>
+              <a
+                className="link item"
+                onClick={[Function]}
+              >
+                About
+              </a>
+              <a
+                className="link item"
+                onClick={[Function]}
+              >
+                Issues
+              </a>
+            </div>
             <div
               className="right menu"
             >
               <div
-                className="item"
-                onClick={[Function]}
+                className="ui grid computer only"
               >
-                <a
-                  className="ui blue compact button"
-                  href="http://eepurl.com/cVtGir"
+                <div
+                  className="item"
                   onClick={[Function]}
-                  tabIndex={undefined}
                 >
-                  Join Us
-                </a>
+                  <a
+                    className="ui blue compact button"
+                    href="http://eepurl.com/cVtGir"
+                    onClick={[Function]}
+                    tabIndex={undefined}
+                  >
+                    Join Us
+                  </a>
+                </div>
+                <div
+                  className="item"
+                  onClick={[Function]}
+                >
+                  <a
+                    className="ui orange compact button"
+                    href="https://secure.actblue.com/donate/panda2018"
+                    onClick={[Function]}
+                    tabIndex={undefined}
+                  >
+                    Donate
+                  </a>
+                </div>
               </div>
               <div
-                className="item"
-                onClick={[Function]}
+                className="ui grid mobile only"
               >
-                <a
-                  className="ui orange compact button"
-                  href="https://secure.actblue.com/donate/panda2018"
+                <div
+                  aria-busy={undefined}
+                  aria-disabled={undefined}
+                  aria-expanded={false}
+                  aria-multiselectable={undefined}
+                  className="ui simple dropdown-dark dropdown"
+                  onBlur={[Function]}
+                  onChange={[Function]}
                   onClick={[Function]}
-                  tabIndex={undefined}
+                  onFocus={[Function]}
+                  onMouseDown={[Function]}
+                  role="listbox"
+                  tabIndex={0}
                 >
-                  Donate
-                </a>
+                  <div
+                    className="text"
+                  >
+                     
+                  </div>
+                  <i
+                    aria-hidden="true"
+                    className="content icon"
+                  />
+                  <div
+                    className="menu transition"
+                  >
+                    <div
+                      aria-checked={false}
+                      aria-disabled={undefined}
+                      aria-selected={true}
+                      className="selected item"
+                      onClick={[Function]}
+                      role="option"
+                      style={
+                        Object {
+                          "pointerEvents": "all",
+                        }
+                      }
+                    >
+                      <span
+                        className="text"
+                      >
+                        About
+                      </span>
+                    </div>
+                    <div
+                      aria-checked={false}
+                      aria-disabled={undefined}
+                      aria-selected={false}
+                      className="item"
+                      onClick={[Function]}
+                      role="option"
+                      style={
+                        Object {
+                          "pointerEvents": "all",
+                        }
+                      }
+                    >
+                      <span
+                        className="text"
+                      >
+                        Issues
+                      </span>
+                    </div>
+                    <div
+                      aria-checked={false}
+                      aria-disabled={undefined}
+                      aria-selected={false}
+                      className="item"
+                      onClick={[Function]}
+                      role="option"
+                      style={
+                        Object {
+                          "pointerEvents": "all",
+                        }
+                      }
+                    >
+                      <span
+                        className="text"
+                      >
+                        Join Us
+                      </span>
+                    </div>
+                    <div
+                      aria-checked={false}
+                      aria-disabled={undefined}
+                      aria-selected={false}
+                      className="item"
+                      onClick={[Function]}
+                      role="option"
+                      style={
+                        Object {
+                          "pointerEvents": "all",
+                        }
+                      }
+                    >
+                      <span
+                        className="text"
+                      >
+                        Donate
+                      </span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

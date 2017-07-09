@@ -31,4 +31,23 @@ $top: rgba(0, 0, 0, 0.8);
     right: 0;
     top: 0;
   }
+
+  .dropdown {
+    margin-top: 0.75em;
+    margin-right: 0.5em;
+
+    &-dark {
+      .icon {
+        color: #033666;
+        font-size: 2em;
+      }
+    }
+
+    &-light {
+      .icon {
+        color: #fff;
+        font-size: 2em;
+      }
+    }
+  }
 }

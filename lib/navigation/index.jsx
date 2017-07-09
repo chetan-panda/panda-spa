@@ -3,6 +3,8 @@ import './style.scss'
 import {
   Button
 , Container
+, Dropdown
+, Grid
 , Image
 , Menu
 , Segment
@@ -57,31 +59,68 @@ class Navigation extends CtrlComponent {
                 }
               />
             </Menu.Item>
-            <Menu.Item
-              link
-              onClick={() => router.updateRoute('/about')}
-            >About</Menu.Item>
-            <Menu.Item
-              link
-              onClick={() => router.updateRoute('/issues')}
-            >Issues</Menu.Item>
+            <Grid className='computer only'>
+              <Menu.Item
+                link
+                onClick={() => router.updateRoute('/about')}
+              >About</Menu.Item>
+              <Menu.Item
+                link
+                onClick={() => router.updateRoute('/issues')}
+              >Issues</Menu.Item>
+            </Grid>
             <Menu.Menu position='right'>
-              <Menu.Item>
-                <Button
-                  as='a'
-                  color='blue'
-                  compact
-                  href='http://eepurl.com/cVtGir'
-                >Join Us</Button>
-              </Menu.Item>
-              <Menu.Item>
-                <Button
-                  as='a'
-                  color='orange'
-                  compact
-                  href='https://secure.actblue.com/donate/panda2018'
-                >Donate</Button>
-              </Menu.Item>
+              <Grid className='computer only'>
+                <Menu.Item>
+                  <Button
+                    as='a'
+                    color='blue'
+                    compact
+                    href='http://eepurl.com/cVtGir'
+                  >Join Us</Button>
+                </Menu.Item>
+                <Menu.Item>
+                  <Button
+                    as='a'
+                    color='orange'
+                    compact
+                    href='https://secure.actblue.com/donate/panda2018'
+                  >Donate</Button>
+                </Menu.Item>
+              </Grid>
+              <Grid className='mobile only'>
+                <Dropdown
+                  className={isLogoDark ? 'dropdown-dark' : 'dropdown-light'}
+                  icon='content'
+                  simple
+                  text=' '
+                  options={[
+                    {
+                      text: 'About'
+                    , value: '/about'
+                    }
+                  , {
+                      text: 'Issues'
+                    , value: '/issues'
+                    }
+                  , {
+                      text: 'Join Us'
+                    , value: 'http://eepurl.com/cVtGir'
+                    }
+                  , {
+                      text: 'Donate'
+                    , value: 'https://secure.actblue.com/donate/panda2018'
+                    }
+                  ]}
+                  onChange={(event, {value} = {}) => {
+                    if (value.charAt(0) === '/') {
+                      return router.updateRoute(value)
+                    }
+
+                    return document.location.href = value
+                  }}
+                />
+              </Grid>
             </Menu.Menu>
           </Menu>
           {props.children}
