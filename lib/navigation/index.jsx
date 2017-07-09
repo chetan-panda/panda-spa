@@ -19,6 +19,7 @@ class Navigation extends CtrlComponent {
     } = this
 
     const {router} = context
+    const {isLogoDark} = props
 
     const video = props.video
       ? <div className='player-container'>
@@ -50,7 +51,11 @@ class Navigation extends CtrlComponent {
             <Menu.Item>
               <Image
                 size='mini'
-                src={this.getContent('logo.url')}
+                src={
+                  isLogoDark
+                    ? this.getContent('logoDark.url')
+                    : this.getContent('logo.url')
+                }
               />
             </Menu.Item>
             <Menu.Item

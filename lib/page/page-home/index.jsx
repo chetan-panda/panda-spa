@@ -36,6 +36,7 @@ class PageHome extends CtrlComponent {
       <div id='page-about'>
         <Navigation
           content={this.getContent('navigation')}
+          isLogoDark={true}
           style={{
             left: 0
           , position: 'absolute'
