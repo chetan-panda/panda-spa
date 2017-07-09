@@ -63,6 +63,14 @@ class Navigation extends CtrlComponent {
             >Issues</Menu.Item>
             <Menu.Menu position='right'>
               <Menu.Item>
+                <Button
+                  as='a'
+                  color='blue'
+                  compact
+                  href='http://eepurl.com/cVtGir'
+                >Join Us</Button>
+              </Menu.Item>
+              <Menu.Item>
                 <Button color='orange' compact>Donate</Button>
               </Menu.Item>
             </Menu.Menu>

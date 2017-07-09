@@ -65,6 +65,19 @@ exports[`should check default app structure 1`] = `
                 className="item"
                 onClick={[Function]}
               >
+                <a
+                  className="ui blue compact button"
+                  href="http://eepurl.com/cVtGir"
+                  onClick={[Function]}
+                  tabIndex={undefined}
+                >
+                  Join Us
+                </a>
+              </div>
+              <div
+                className="item"
+                onClick={[Function]}
+              >
                 <button
                   className="ui orange compact button"
                   onClick={[Function]}
@@ -82,25 +95,54 @@ exports[`should check default app structure 1`] = `
         id="page-home"
       >
         <div
-          className="ui header"
-          style={
-            Object {
-              "color": "#003057",
-              "fontFamily": "Montserrat",
-            }
+          className="ui hidden divider"
+        />
+        <div
+          className="ui hidden divider"
+        />
+      </div>
+      <div
+        className="ui basic inverted segment"
+        style={
+          Object {
+            "backgroundColor": "#003666",
+            "marginTop": 0,
+            "paddingBottom": "3em",
+            "paddingTop": "3em",
           }
+        }
+      >
+        <div
+          className="ui text container"
         >
-          <i
-            aria-hidden="true"
-            className="angle down icon"
-          />
+          <h1
+            className="ui inverted header"
+          >
+            Why I'm Running
+          </h1>
+          <div />
         </div>
+      </div>
+      <div
+        className="ui basic segment"
+        style={
+          Object {
+            "marginTop": 0,
+            "paddingBottom": "3em",
+            "paddingTop": "3em",
+          }
+        }
+      >
         <div
-          className="ui hidden divider"
-        />
-        <div
-          className="ui hidden divider"
-        />
+          className="ui text container"
+        >
+          <h1
+            className="ui header"
+          >
+            About Me
+          </h1>
+          <div />
+        </div>
       </div>
     </div>
   </div>

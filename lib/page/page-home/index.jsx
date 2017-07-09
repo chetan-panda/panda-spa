@@ -1,12 +1,14 @@
 import './style.scss'
 
 import {
-  Divider
+  Container
+, Divider
 , Header
-, Icon
 , Image
+, Segment
 } from 'semantic-ui-react'
 import CtrlComponent from 'ctrl-react-component'
+import Markdown from 'react-markdown'
 import Navigation from '../../navigation'
 import Page from '../'
 import React from 'react'
@@ -15,7 +17,19 @@ class PageHome extends CtrlComponent {
   renderFiltered() {
     const logoSrc = this.getContent('logo')
     const logo = logoSrc
-      ? <Image src={logoSrc.url}/>
+      ? <Image src={logoSrc.url} style={{
+          height: '40vh'
+        , marginBottom: 0
+        , marginTop: '30vh'
+        }}/>
+      : null
+    const pandaSrc = this.getContent('panda')
+    const panda = pandaSrc
+      ? <Image src={pandaSrc.url} style={{
+          height: '40vh'
+        , marginRight: '4em'
+        , marginTop: 'auto'
+        }}/>
       : null
 
     return (
@@ -31,15 +45,31 @@ class PageHome extends CtrlComponent {
         />
         <Page id='page-home' title={this.getContent('title')}>
           {logo}
-          <Header style={{
-            color: '#003057'
-          , fontFamily: 'Montserrat'
-          }}>
-            <Icon name='angle down'/>
-          </Header>
           <Divider hidden/>
           <Divider hidden/>
+          {panda}
         </Page>
+        <Segment basic inverted style={{
+          backgroundColor: '#003666'
+        , marginTop: 0
+        , paddingBottom: '3em'
+        , paddingTop: '3em'
+        }}>
+          <Container text>
+            <Header as='h1' inverted>Why I'm Running</Header>
+            <Markdown source={this.getContent('why')}/>
+          </Container>
+        </Segment>
+        <Segment basic style={{
+          marginTop: 0
+        , paddingBottom: '3em'
+        , paddingTop: '3em'
+        }}>
+          <Container text>
+            <Header as='h1'>About Me</Header>
+            <Markdown source={this.getContent('bio')}/>
+          </Container>
+        </Segment>
     </div>
     )
   }
