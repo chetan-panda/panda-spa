@@ -1,11 +1,15 @@
 import CtrlComponent from 'ctrl-react-component'
 import PageHome from '../page/page-home'
+import PageIssue from '../page/page-issue'
+import PageIssues from '../page/page-issues'
 import React from 'react'
 
 import debug from 'debug'
 
 const error = debug('panda:error:content-manager')
 const log = debug('panda:content-manager')
+
+const ISSUE_LENGTH = 2
 
 class ContentManager extends CtrlComponent {
   error = error
@@ -21,8 +25,13 @@ class ContentManager extends CtrlComponent {
     }
   }
 
+  findIssue = (issue) => {
+    return issue.slug === this.context.router.route[1]
+  }
+
   renderFiltered() {
     const content = this.getContent()
+    const issue = (this.getContent('issue') || []).find(this.findIssue)
 
     this.log('Using content:', content)
 
@@ -31,6 +40,19 @@ class ContentManager extends CtrlComponent {
         <PageHome
           content={this.getContent('pageHome')}
           routeFilter={(route) => route.length === 0}
+        />
+        <PageIssues
+          content={this.getContent('pageIssues')}
+          routeFilter={(route) => route[0] === 'issues' && route.length === 1}
+        />
+        <PageIssue
+          content={{
+            globalElements: this.getContent('pageIssue')
+          , issue
+          }}
+          routeFilter={
+            (route) => route[0] === 'issues' && route.length === ISSUE_LENGTH
+          }
         />
       </div>
     )

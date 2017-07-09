@@ -1,0 +1,52 @@
+$border: #fff;
+$text-shadow: #000;
+
+.issues {
+  &-thumbnail {
+    filter: blur(0) brightness(50%);
+    transition: filter 0.5s;
+
+    &-border {
+      align-items: center;
+      border: 1.25rem solid $border;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      left: 0;
+      padding: 2em;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    &-title {
+      font-size: 3em;
+      letter-spacing: 0.1em;
+      transition: font-size 0.25s;
+    }
+
+    &-summary {
+      color: $border;
+      font-size: 1.5em;
+      text-align: center;
+      transition: font-size 0.25s;
+    }
+  }
+
+  &-thumbnail-wrapper {
+    cursor: pointer;
+    padding: 1em;
+    position: relative;
+
+    &:hover {
+      .issues-thumbnail {
+        filter: blur(0.3em) brightness(75%);
+      }
+
+      .issues-thumbnail-title {
+        font-size: 2.1em;
+      }
+    }
+  }
+}
