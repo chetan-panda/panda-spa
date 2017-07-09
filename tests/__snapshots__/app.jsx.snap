@@ -78,13 +78,14 @@ exports[`should check default app structure 1`] = `
                 className="item"
                 onClick={[Function]}
               >
-                <button
+                <a
                   className="ui orange compact button"
+                  href="https://secure.actblue.com/donate/panda2018"
                   onClick={[Function]}
                   tabIndex={undefined}
                 >
                   Donate
-                </button>
+                </a>
               </div>
             </div>
           </div>

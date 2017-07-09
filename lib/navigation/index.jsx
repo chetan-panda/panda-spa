@@ -71,7 +71,12 @@ class Navigation extends CtrlComponent {
                 >Join Us</Button>
               </Menu.Item>
               <Menu.Item>
-                <Button color='orange' compact>Donate</Button>
+                <Button
+                  as='a'
+                  color='orange'
+                  compact
+                  href='https://secure.actblue.com/donate/panda2018'
+                >Donate</Button>
               </Menu.Item>
             </Menu.Menu>
           </Menu>
