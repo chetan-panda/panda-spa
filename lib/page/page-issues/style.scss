@@ -21,14 +21,14 @@ $text-shadow: #000;
     }
 
     &-title {
-      font-size: 3em;
+      font-size: 1.5rem !important;
       letter-spacing: 0.1em;
       transition: font-size 0.25s;
     }
 
     &-summary {
       color: $border;
-      font-size: 1.5em;
+      font-size: 1.2rem !important;
       text-align: center;
       transition: font-size 0.25s;
     }
