@@ -35,14 +35,14 @@ class Navigation extends CtrlComponent {
       <Segment
         basic
         className='navigation'
-        style={{
+        style={Object.assign({
           backgroundImage: `url(${props.cover})`
         , backgroundPosition: 'center'
         , backgroundSize: 'cover'
         , height: props.video ? '56.25vw' : null
         , marginBottom: 0
         , maxHeight: '60vh'
-        }}
+        }, props.style)}
       >
         <div className='navigation-overlay'/>
         <Container className='navigation-container'>

@@ -6,24 +6,102 @@ exports[`should check default app structure 1`] = `
     id="content-manager"
   >
     <div
-      className="page"
-      id="page-home"
+      id="page-about"
     >
       <div
-        className="ui header"
+        className="ui basic segment navigation"
         style={
           Object {
-            "color": "#003057",
-            "fontFamily": "Montserrat",
+            "backgroundImage": "url(undefined)",
+            "backgroundPosition": "center",
+            "backgroundSize": "cover",
+            "height": null,
+            "left": 0,
+            "marginBottom": 0,
+            "maxHeight": "60vh",
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
           }
         }
-      />
+      >
+        <div
+          className="navigation-overlay"
+        />
+        <div
+          className="ui container navigation-container"
+        >
+          <div
+            className="ui huge borderless inverted secondary menu"
+          >
+            <div
+              className="item"
+              onClick={[Function]}
+            >
+              <img
+                alt={undefined}
+                className="ui mini image"
+                height={undefined}
+                src={null}
+                width={undefined}
+              />
+            </div>
+            <a
+              className="link item"
+              onClick={[Function]}
+            >
+              About
+            </a>
+            <a
+              className="link item"
+              onClick={[Function]}
+            >
+              Issues
+            </a>
+            <div
+              className="right menu"
+            >
+              <div
+                className="item"
+                onClick={[Function]}
+              >
+                <button
+                  className="ui orange compact button"
+                  onClick={[Function]}
+                  tabIndex={undefined}
+                >
+                  Donate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div
-        className="ui hidden divider"
-      />
-      <div
-        className="ui hidden divider"
-      />
+        className="page"
+        id="page-home"
+      >
+        <div
+          className="ui header"
+          style={
+            Object {
+              "color": "#003057",
+              "fontFamily": "Montserrat",
+            }
+          }
+        >
+          <i
+            aria-hidden="true"
+            className="angle down icon"
+          />
+        </div>
+        <div
+          className="ui hidden divider"
+        />
+        <div
+          className="ui hidden divider"
+        />
+      </div>
     </div>
   </div>
 </div>

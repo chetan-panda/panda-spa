@@ -39,7 +39,10 @@ class ContentManager extends CtrlComponent {
       <div id='content-manager'>
         <PageHome
           content={this.getContent('pageHome')}
-          routeFilter={(route) => route.length === 0}
+          routeFilter={(route) =>
+             route.length === 0
+          || route[0] === 'about'
+          }
         />
         <PageIssues
           content={this.getContent('pageIssues')}
