@@ -24,21 +24,32 @@ class PageIssue extends CtrlComponent {
       <Page id='page-issue' title={this.getGlobal('title')}>
         <Navigation
           content={this.getGlobal('navigation')}
-          video={this.get('videoUrl')}
-        />
+          cover={this.get('cover.url')}
+        >
+          <Header
+            as='h1'
+            inverted
+            style={{
+              fontSize: '4em'
+            , margin: '2em 0 0'
+            }}
+            textAlign='center'
+          >
+            {this.get('title')}
+          </Header>
+          <Header
+            as='h3'
+            inverted
+            style={{marginBottom: '4em'}}
+            textAlign='center'
+          >
+            {this.get('summary')}
+          </Header>
+        </Navigation>
         <Segment basic inverted style={{
           backgroundColor: '#003666'
         , marginTop: 0
         }}>
-          <Header as='h1' textAlign='center' style={{
-            fontSize: '4em'
-          , marginTop: '0.25em'
-          }}>
-            {this.get('title')}
-          </Header>
-          <Header as='h3' textAlign='center' style={{marginTop: 0}}>
-            {this.get('summary')}
-          </Header>
           <Divider hidden/>
         </Segment>
         <Container text>
