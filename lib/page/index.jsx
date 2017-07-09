@@ -8,7 +8,9 @@ class Page extends CtrlComponent {
     document.title = props.title
 
     return (
-      <div id={props.id} className='page'>
+      <div id={props.id} className='page' style={{
+        flex: 1
+      }}>
         {props.children}
       </div>
     )

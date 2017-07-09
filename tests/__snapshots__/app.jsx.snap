@@ -4,6 +4,13 @@ exports[`should check default app structure 1`] = `
 <div>
   <div
     id="content-manager"
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "minHeight": "100vh",
+      }
+    }
   >
     <div
       id="page-about"
@@ -209,6 +216,11 @@ exports[`should check default app structure 1`] = `
       <div
         className="page"
         id="page-home"
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
       >
         <div
           className="ui hidden divider"

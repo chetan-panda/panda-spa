@@ -37,7 +37,11 @@ class ContentManager extends CtrlComponent {
     this.log('Using content:', content)
 
     return (
-      <div id='content-manager'>
+      <div id='content-manager' style={{
+        display: 'flex'
+      , flexDirection: 'column'
+      , minHeight: '100vh'
+      }}>
         <PageHome
           content={this.getContent('pageHome')}
           routeFilter={(route) =>
