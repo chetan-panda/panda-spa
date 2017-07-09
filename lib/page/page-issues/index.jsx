@@ -13,9 +13,20 @@ import Page from '../'
 import React from 'react'
 
 class PageIssues extends CtrlComponent {
-  static mapIssue(issue) {
+  constructor(props, context) {
+    super(props, context)
+
+    this.mapIssue = this.mapIssue.bind(this)
+  }
+
+  mapIssue(issue) {
+    const {context} = this
+    const {router} = context
+
     return (
-      <Grid.Column width='8'>
+      <Grid.Column onClick={() => {
+        router.updateRoute(`/issues/${issue.slug}`)
+      }} width='8'>
         <div className='issues-thumbnail-wrapper'>
           <Image className='issues-thumbnail' src={issue.thumbnail.url} fluid/>
           <div className='issues-thumbnail-border'>
@@ -55,7 +66,7 @@ class PageIssues extends CtrlComponent {
         <Divider hidden/>
         <Container>
           <Grid>
-            {(this.getContent('issues') || []).map(PageIssues.mapIssue)}
+            {(this.getContent('issues') || []).map(this.mapIssue)}
           </Grid>
         </Container>
         <Divider hidden/>
