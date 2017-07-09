@@ -42,7 +42,6 @@ class Navigation extends CtrlComponent {
         , backgroundSize: 'cover'
         , height: props.video ? '56.25vw' : null
         , marginBottom: 0
-        , maxHeight: '60vh'
         }, props.style)}
       >
         <div className='navigation-overlay'/>
