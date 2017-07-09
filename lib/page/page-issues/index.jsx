@@ -102,7 +102,7 @@ class PageIssues extends CtrlComponent {
         <Divider hidden/>
         <Divider hidden/>
         <Container>
-          <Grid>
+          <Grid stackable={true}>
             {(this.getContent('issues') || []).map(this.mapIssue)}
           </Grid>
         </Container>
