@@ -23,6 +23,7 @@ class PageIssues extends CtrlComponent {
               className='issues-thumbnail-title'
               inverted
               size='huge'
+              textAlign='center'
             >{issue.title.toUpperCase()}</Header>
             <p
               className='issues-thumbnail-summary'
