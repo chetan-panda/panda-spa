@@ -1,9 +1,5 @@
 #!/bin/bash
 
-printf "Running initial build:\n\n"
-
-./scripts/build
-
 printf "\n\nWatching with webpack, pug, and browser-sync:\n\n"
 
 trap 'printf "\n\nKilling webpack, pug, and browser-sync.\n"; kill $(jobs -p); wait $WEBPACK_PID; wait $PUG_PID; wait $BROWSER_SYNC_PID' 2 9
