@@ -1,5 +1,6 @@
 import {
-  Container
+  Breadcrumb
+, Container
 , Divider
 , Header
 , Segment
@@ -20,6 +21,9 @@ class PageIssue extends CtrlComponent {
   }
 
   renderFiltered() {
+    const {context} = this
+    const {router} = context
+
     return (
       <Page id='page-issue' title={this.getGlobal('title')}>
         <Navigation
@@ -31,7 +35,7 @@ class PageIssue extends CtrlComponent {
             inverted
             style={{
               fontSize: '4em'
-            , margin: '2em 0 0'
+            , margin: '1.75em 0 0'
             }}
             textAlign='center'
           >
@@ -40,7 +44,7 @@ class PageIssue extends CtrlComponent {
           <Header
             as='h3'
             inverted
-            style={{marginBottom: '4em'}}
+            style={{marginBottom: '5em'}}
             textAlign='center'
           >
             {this.get('summary')}
@@ -50,9 +54,51 @@ class PageIssue extends CtrlComponent {
           backgroundColor: '#003666'
         , marginTop: 0
         }}>
-          <Divider hidden/>
+          <Container style={{
+            paddingLeft: '1.25em'
+          , paddingRight: '1.25em'
+          }}>
+            <Breadcrumb
+              style={{margin: '0.5em 0 0.5em'}}
+            >
+              <Breadcrumb.Section
+                link
+                onClick={() => router.updateRoute('/')}
+                style={{color: 'white'}}
+              >
+                Home
+              </Breadcrumb.Section>
+              <Breadcrumb.Divider
+                icon='right angle'
+                style={{color: 'white'}}
+              />
+              <Breadcrumb.Section
+                link
+                onClick={() => router.updateRoute('/issues')}
+                style={{color: 'white'}}
+              >
+                Issues
+              </Breadcrumb.Section>
+              <Breadcrumb.Divider
+                icon='right angle'
+                onClick={() => router.updateRoute(
+                  `/issues/${this.get('slug')}`
+                )}
+                style={{color: 'white'}}
+              />
+              <Breadcrumb.Section
+                link
+                style={{color: 'white'}}
+              >
+                {this.get('title')}
+              </Breadcrumb.Section>
+            </Breadcrumb>
+          </Container>
         </Segment>
-        <Container text>
+        <Container style={{
+          paddingLeft: '1.25em'
+        , paddingRight: '1.25em'
+        }}>
           <Divider hidden/>
           <Divider hidden/>
           <p>

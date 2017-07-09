@@ -1,11 +1,13 @@
 import './style.scss'
 
 import {
-  Container
+  Breadcrumb
+, Container
 , Divider
 , Grid
 , Header
 , Image
+, Segment
 } from 'semantic-ui-react'
 import CtrlComponent from 'ctrl-react-component'
 import Navigation from '../../navigation'
@@ -46,6 +48,9 @@ class PageIssues extends CtrlComponent {
   }
 
   renderFiltered() {
+    const {context} = this
+    const {router} = context
+
     return (
       <Page id='page-issues' title={this.getContent('title')}>
         <Navigation
@@ -58,10 +63,42 @@ class PageIssues extends CtrlComponent {
             textAlign='center'
             style={{
               fontSize: '4em'
-            , margin: '2em 0 2.5em'
+            , margin: '2em 0 2em'
             }}
           >Issues</Header>
         </Navigation>
+        <Segment basic inverted style={{
+          backgroundColor: '#003666'
+        , marginTop: '0'
+        }}>
+          <Container style={{
+            paddingLeft: '1.25em'
+          , paddingRight: '1.25em'
+          }}>
+            <Breadcrumb
+              style={{margin: '0.5em 0 0.5em'}}
+            >
+              <Breadcrumb.Section
+                link
+                onClick={() => router.updateRoute('/')}
+                style={{color: 'white'}}
+              >
+                Home
+              </Breadcrumb.Section>
+              <Breadcrumb.Divider
+                icon='right angle'
+                style={{color: 'white'}}
+              />
+              <Breadcrumb.Section
+                link
+                onClick={() => router.updateRoute('/issues')}
+                style={{color: 'white'}}
+              >
+                Issues
+              </Breadcrumb.Section>
+            </Breadcrumb>
+          </Container>
+        </Segment>
         <Divider hidden/>
         <Divider hidden/>
         <Container>
