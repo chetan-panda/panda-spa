@@ -32,6 +32,7 @@ class Navigation extends CtrlComponent {
         className='navigation'
         style={{
           backgroundImage: `url(${props.cover})`
+        , backgroundPosition: 'center'
         , backgroundSize: 'cover'
         , height: props.video ? '56.25vw' : null
         , marginBottom: 0
