@@ -13,7 +13,12 @@ import React from 'react'
 
 class Navigation extends CtrlComponent {
   renderFiltered() {
-    const props = this.props
+    const {
+      context
+    , props
+    } = this
+
+    const {router} = context
 
     const video = props.video
       ? <div className='player-container'>
@@ -48,8 +53,14 @@ class Navigation extends CtrlComponent {
                 src={this.getContent('logo.url')}
               />
             </Menu.Item>
-            <Menu.Item link>About</Menu.Item>
-            <Menu.Item link>Issues</Menu.Item>
+            <Menu.Item
+              link
+              onClick={() => router.updateRoute('/about')}
+            >About</Menu.Item>
+            <Menu.Item
+              link
+              onClick={() => router.updateRoute('/issues')}
+            >Issues</Menu.Item>
             <Menu.Menu position='right'>
               <Menu.Item>
                 <Button color='orange' compact>Donate</Button>
