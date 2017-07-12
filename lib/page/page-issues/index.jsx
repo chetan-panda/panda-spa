@@ -38,9 +38,9 @@ class PageIssues extends CtrlComponent {
               size='huge'
               textAlign='center'
             >{issue.title.toUpperCase()}</Header>
-            <p
-              className='issues-thumbnail-summary'
-            >{issue.summary}</p>
+            <Grid
+              className='issues-thumbnail-summary computer tablet only'
+            >{issue.summary}</Grid>
           </div>
         </div>
       </Grid.Column>

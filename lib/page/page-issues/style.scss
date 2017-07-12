@@ -29,6 +29,7 @@ $text-shadow: #000;
     &-summary {
       color: $border;
       font-size: 1.2rem !important;
+      margin-top: 0em !important;
       text-align: center;
       transition: font-size 0.25s;
     }
