@@ -66,8 +66,8 @@ class Navigation extends CtrlComponent {
             <Grid className='computer only'>
               <Menu.Item
                 link
-                onClick={() => router.updateRoute('/about')}
-              >About</Menu.Item>
+                onClick={() => router.updateRoute('/')}
+              >Home</Menu.Item>
               <Menu.Item
                 link
                 onClick={() => router.updateRoute('/issues')}
@@ -92,7 +92,7 @@ class Navigation extends CtrlComponent {
                   >Donate</Button>
                 </Menu.Item>
               </Grid>
-              <Grid className='tablet mobile only'>
+              <Grid className='taZblet mobile only'>
                 <Dropdown
                   className={isLogoDark ? 'dropdown-dark' : 'dropdown-light'}
                   defaultValue={`/${router.route[router.route.length - 1]}`}
@@ -101,9 +101,9 @@ class Navigation extends CtrlComponent {
                   text=' '
                   options={[
                     {
-                      key: 'about'
-                    , text: 'About'
-                    , value: '/about'
+                      key: 'home'
+                    , text: 'Home'
+                    , value: '/'
                     }
                   , {
                       key: 'issues'

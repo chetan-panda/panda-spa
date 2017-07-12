@@ -65,7 +65,7 @@ exports[`should check default app structure 1`] = `
                 className="link item"
                 onClick={[Function]}
               >
-                About
+                Home
               </a>
               <a
                 className="link item"
@@ -108,7 +108,7 @@ exports[`should check default app structure 1`] = `
                 </div>
               </div>
               <div
-                className="ui grid tablet mobile only"
+                className="ui grid taZblet mobile only"
               >
                 <div
                   aria-busy={undefined}
@@ -152,7 +152,7 @@ exports[`should check default app structure 1`] = `
                       <span
                         className="text"
                       >
-                        About
+                        Home
                       </span>
                     </div>
                     <div
