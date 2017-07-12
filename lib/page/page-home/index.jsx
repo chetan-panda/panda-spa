@@ -18,7 +18,7 @@ class PageHome extends CtrlComponent {
     const logoSrc = this.getContent('logo')
     const logo = logoSrc
       ? <Image src={logoSrc.url} style={{
-          height: '40vh'
+          height: '30vh'
         , marginBottom: 0
         , marginTop: '30vh'
         }}/>
