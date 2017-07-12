@@ -48,7 +48,13 @@ exports[`should check default app structure 1`] = `
                 alt={undefined}
                 className="ui mini image"
                 height={undefined}
+                onClick={[Function]}
                 src={null}
+                style={
+                  Object {
+                    "cursor": "pointer",
+                  }
+                }
                 width={undefined}
               />
             </div>
@@ -102,7 +108,7 @@ exports[`should check default app structure 1`] = `
                 </div>
               </div>
               <div
-                className="ui grid mobile only"
+                className="ui grid tablet mobile only"
               >
                 <div
                   aria-busy={undefined}

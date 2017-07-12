@@ -51,12 +51,16 @@ class Navigation extends CtrlComponent {
           <Menu borderless size='huge' secondary inverted>
             <Menu.Item>
               <Image
+                onClick={() => router.updateRoute('/')}
                 size='mini'
                 src={
                   isLogoDark
                     ? this.getContent('logoDark.url')
                     : this.getContent('logo.url')
                 }
+                style={{
+                  cursor: 'pointer'
+                }}
               />
             </Menu.Item>
             <Grid className='computer only'>
@@ -88,7 +92,7 @@ class Navigation extends CtrlComponent {
                   >Donate</Button>
                 </Menu.Item>
               </Grid>
-              <Grid className='mobile only'>
+              <Grid className='tablet mobile only'>
                 <Dropdown
                   className={isLogoDark ? 'dropdown-dark' : 'dropdown-light'}
                   defaultValue={`/${router.route[router.route.length - 1]}`}
