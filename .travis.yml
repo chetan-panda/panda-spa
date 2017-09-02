@@ -3,3 +3,5 @@ language: node_js
 node_js:
   - "node"
   - "8"
+notifications:
+  slack: chetanpanda:HWfgLBNYJqdaYtQz8t4Bltfn
