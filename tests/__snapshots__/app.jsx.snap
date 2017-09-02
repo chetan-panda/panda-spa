@@ -102,6 +102,7 @@ exports[`should check default app structure 1`] = `
                     href="https://secure.actblue.com/donate/panda2018"
                     onClick={[Function]}
                     tabIndex={undefined}
+                    target="_blank"
                   >
                     Donate
                   </a>
