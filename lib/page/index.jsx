@@ -1,4 +1,5 @@
 import CtrlComponent from 'ctrl-react-component'
+import PropTypes from 'prop-types'
 import React from 'react'
 
 class Page extends CtrlComponent {
@@ -9,7 +10,7 @@ class Page extends CtrlComponent {
 
     return (
       <div id={props.id} className='page' style={{
-        flex: 1
+        flex: 1,
       }}>
         {props.children}
       </div>
@@ -17,8 +18,8 @@ class Page extends CtrlComponent {
   }
 
   static propTypes = {
-    id: React.PropTypes.string.isRequired
-  , title: React.PropTypes.string
+    id: PropTypes.string.isRequired,
+    title: PropTypes.string,
   }
 }
 

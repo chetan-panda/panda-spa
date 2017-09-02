@@ -1,9 +1,9 @@
 import {
-  Breadcrumb
-, Container
-, Divider
-, Header
-, Segment
+  Breadcrumb,
+  Container,
+  Divider,
+  Header,
+  Segment,
 } from 'semantic-ui-react'
 import CtrlComponent from 'ctrl-react-component'
 import Markdown from 'react-markdown'
@@ -34,8 +34,8 @@ class PageIssue extends CtrlComponent {
             as='h1'
             inverted
             style={{
-              fontSize: '4em'
-            , margin: '1.75em 0 0'
+              fontSize: '4em',
+             margin: '1.75em 0 0',
             }}
             textAlign='center'
           >
@@ -51,12 +51,12 @@ class PageIssue extends CtrlComponent {
           </Header>
         </Navigation>
         <Segment basic inverted style={{
-          backgroundColor: '#003666'
-        , marginTop: 0
+          backgroundColor: '#003666',
+          marginTop: 0,
         }}>
           <Container style={{
-            paddingLeft: '1.25em'
-          , paddingRight: '1.25em'
+            paddingLeft: '1.25em',
+            paddingRight: '1.25em',
           }}>
             <Breadcrumb
               style={{margin: '0.5em 0 0.5em'}}
@@ -96,8 +96,8 @@ class PageIssue extends CtrlComponent {
           </Container>
         </Segment>
         <Container style={{
-          paddingLeft: '1.25em'
-        , paddingRight: '1.25em'
+          paddingLeft: '1.25em',
+          paddingRight: '1.25em',
         }}>
           <Divider hidden/>
           <Divider hidden/>

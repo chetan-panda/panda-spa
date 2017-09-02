@@ -1,13 +1,13 @@
 import './style.scss'
 
 import {
-  Button
-, Container
-, Dropdown
-, Grid
-, Image
-, Menu
-, Segment
+  Button,
+  Container,
+  Dropdown,
+  Grid,
+  Image,
+  Menu,
+  Segment,
 } from 'semantic-ui-react'
 import CtrlComponent from 'ctrl-react-component'
 import Player from 'react-player'
@@ -16,8 +16,8 @@ import React from 'react'
 class Navigation extends CtrlComponent {
   renderFiltered() {
     const {
-      context
-    , props
+      context,
+      props,
     } = this
 
     const {router} = context
@@ -39,11 +39,11 @@ class Navigation extends CtrlComponent {
         basic
         className='navigation'
         style={Object.assign({
-          backgroundImage: `url(${props.cover})`
-        , backgroundPosition: 'center'
-        , backgroundSize: 'cover'
-        , height: props.video ? '56.25vw' : null
-        , marginBottom: 0
+          backgroundImage: `url(${props.cover})`,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          height: props.video ? '56.25vw' : null,
+          marginBottom: 0,
         }, props.style)}
       >
         <div className='navigation-overlay'/>
@@ -59,7 +59,7 @@ class Navigation extends CtrlComponent {
                     : this.getContent('logo.url')
                 }
                 style={{
-                  cursor: 'pointer'
+                  cursor: 'pointer',
                 }}
               />
             </Menu.Item>
@@ -102,25 +102,25 @@ class Navigation extends CtrlComponent {
                   text=' '
                   options={[
                     {
-                      key: 'home'
-                    , text: 'Home'
-                    , value: '/'
-                    }
-                  , {
-                      key: 'issues'
-                    , text: 'Issues'
-                    , value: '/issues'
-                    }
-                  , {
-                      key: 'join-us'
-                    , text: 'Join Us'
-                    , value: 'http://eepurl.com/cVtGir'
-                    }
-                  , {
-                      key: 'donate'
-                    , text: 'Donate'
-                    , value: 'https://secure.actblue.com/donate/panda2018'
-                    }
+                      key: 'home',
+                      text: 'Home',
+                      value: '/',
+                    },
+                    {
+                      key: 'issues',
+                      text: 'Issues',
+                      value: '/issues',
+                    },
+                    {
+                      key: 'join-us',
+                      text: 'Join Us',
+                      value: 'http://eepurl.com/cVtGir',
+                    },
+                    {
+                      key: 'donate',
+                      text: 'Donate',
+                      value: 'https://secure.actblue.com/donate/panda2018',
+                    },
                   ]}
                   onChange={(event, {value} = {}) => {
                     if (value.charAt(0) === '/') {

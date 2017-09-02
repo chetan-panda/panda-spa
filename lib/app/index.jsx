@@ -1,5 +1,6 @@
 import ContentManager from '../content-manager'
 import CtrlRouter from 'ctrl-react-router'
+import PropTypes from 'prop-types'
 import React from 'react'
 import debug from 'debug'
 import feathers from 'feathers-client'
@@ -13,7 +14,7 @@ class App extends React.Component {
   error = error
   log = log
   state = {
-    content: {}
+    content: {},
   }
 
   constructor(props) {
@@ -27,7 +28,7 @@ class App extends React.Component {
       .configure(feathers.hooks())
       .configure(feathers.socketio(this.socket))
     this.services = {
-      content: this.getService('content')
+      content: this.getService('content'),
     }
 
     if (!props.isProduction) {
@@ -61,9 +62,9 @@ class App extends React.Component {
   }
 
   static propTypes = {
-    apiVersion: React.PropTypes.string.isRequired
-  , isProduction: React.PropTypes.bool.isRequired
-  , socketUrl: React.PropTypes.string.isRequired
+    apiVersion: PropTypes.string.isRequired,
+    isProduction: PropTypes.bool.isRequired,
+    socketUrl: PropTypes.string.isRequired,
   }
 }
 

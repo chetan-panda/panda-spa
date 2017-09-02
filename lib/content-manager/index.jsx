@@ -3,6 +3,7 @@ import Footer from '../footer'
 import PageHome from '../page/page-home'
 import PageIssue from '../page/page-issue'
 import PageIssues from '../page/page-issues'
+import PropTypes from 'prop-types'
 import React from 'react'
 
 import debug from 'debug'
@@ -38,9 +39,9 @@ class ContentManager extends CtrlComponent {
 
     return (
       <div id='content-manager' style={{
-        display: 'flex'
-      , flexDirection: 'column'
-      , minHeight: '100vh'
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: '100vh',
       }}>
         <PageHome
           content={this.getContent('pageHome')}
@@ -55,8 +56,8 @@ class ContentManager extends CtrlComponent {
         />
         <PageIssue
           content={{
-            globalElements: this.getContent('pageIssue')
-          , issue
+            globalElements: this.getContent('pageIssue'),
+            issue,
           }}
           routeFilter={
             (route) => route[0] === 'issues' && route.length === ISSUE_LENGTH
@@ -68,7 +69,7 @@ class ContentManager extends CtrlComponent {
   }
 
   static propTypes = {
-    isProduction: React.PropTypes.bool.isRequired
+    isProduction: PropTypes.bool.isRequired,
   }
 }
 
