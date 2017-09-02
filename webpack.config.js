@@ -10,73 +10,73 @@ const processEnvPlugin = new webpack.DefinePlugin({
     result[key] = JSON.stringify(value)
 
     return result
-  }, {})
+  }, {}),
 })
 
 const plugins = [processEnvPlugin]
 
 module.exports = {
   entry: {
-    base: './panda-spa.jsx'
-  }
-, module: {
+    base: './panda-spa.jsx',
+  },
+  module: {
     rules: [
       {
-        test: /\.(js|jsx)$/
-      , use: [{
-          loader: 'babel-loader'
-        , options: {
+        test: /\.(js|jsx)$/,
+        use: [{
+          loader: 'babel-loader',
+          options: {
             presets: [
-              'es2015'
-            , 'react'
-            , 'stage-0'
-            ]
-          }
-        }]
-      }
-    , {
-        test: /\.json$/
-      , use: ['json-loader']
-      }
-    , {
-        test: /\.scss$/
-      , use: [
-          'style-loader'
-        , 'css-loader'
-        , {
-            loader: 'sass-loader'
-          , options: {
+              'es2015',
+              'react',
+              'stage-0',
+            ],
+          },
+        }],
+      },
+      {
+        test: /\.json$/,
+        use: ['json-loader'],
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          {
+            loader: 'sass-loader',
+            options: {
               includePaths: [
-                './node_modules/compass-mixins/lib'
-              ]
-            }
-          }
-        , {
-            loader: 'sass-resources-loader'
-          , options: {
+                './node_modules/compass-mixins/lib',
+              ],
+            },
+          },
+          {
+            loader: 'sass-resources-loader',
+            options: {
               resources: [
-                './node_modules/compass-mixins/lib/_compass.scss'
-              ]
-            }
-          }
-        ]
-      }
-    , {
-        test: /\.(svg|png|jpg)$/
-      , use: ['url-loader']
-      }
-    ]
-  }
-, output: {
-    filename: '[name].bundle.js'
-  , path: path.resolve(__dirname, './dist')
-  }
-, plugins
-, resolve: {
+                './node_modules/compass-mixins/lib/_compass.scss',
+              ],
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(svg|png|jpg)$/,
+        use: ['url-loader'],
+      },
+    ],
+  },
+  output: {
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, './dist'),
+  },
+  plugins,
+  resolve: {
     extensions: [
-      '.js'
-    , '.jsx'
-    , '.json'
-    ]
-  }
+      '.js',
+      '.jsx',
+      '.json',
+    ],
+  },
 }

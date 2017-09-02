@@ -86,8 +86,10 @@ exports[`should check default app structure 1`] = `
                 >
                   <a
                     className="ui blue compact button"
+                    disabled={undefined}
                     href="http://eepurl.com/cVtGir"
                     onClick={[Function]}
+                    role="button"
                     tabIndex={undefined}
                   >
                     Join Us
@@ -99,8 +101,10 @@ exports[`should check default app structure 1`] = `
                 >
                   <a
                     className="ui orange compact button"
+                    disabled={undefined}
                     href="https://secure.actblue.com/donate/panda2018"
                     onClick={[Function]}
+                    role="button"
                     tabIndex={undefined}
                     target="_blank"
                   >
@@ -116,7 +120,7 @@ exports[`should check default app structure 1`] = `
                   aria-disabled={undefined}
                   aria-expanded={false}
                   aria-multiselectable={undefined}
-                  className="ui simple dropdown-dark dropdown"
+                  className="ui simple dropdown dropdown-dark"
                   onBlur={[Function]}
                   onChange={[Function]}
                   onClick={[Function]}
@@ -126,13 +130,16 @@ exports[`should check default app structure 1`] = `
                   tabIndex={0}
                 >
                   <div
+                    aria-live="polite"
                     className="text"
+                    role="alert"
                   >
                      
                   </div>
                   <i
                     aria-hidden="true"
                     className="content icon"
+                    onClick={[Function]}
                   />
                   <div
                     className="menu transition"
@@ -253,7 +260,7 @@ exports[`should check default app structure 1`] = `
           <h1
             className="ui inverted header"
           >
-            Why I'm Running
+            Why I’m Running
           </h1>
           <div />
         </div>
@@ -314,7 +321,7 @@ exports[`should check default app structure 1`] = `
           </a>
         </p>
         <p>
-          If you'd  like to send a contribution by mail, please address it to:
+          If you’d  like to send a contribution by mail, please address it to:
           <br />
           Committee to Elect Chetan Panda, PO Box 29416 Austin, Texas 78755
         </p>

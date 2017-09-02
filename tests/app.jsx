@@ -2,7 +2,7 @@ jest.mock('socket.io-client', () => {
   return jest.fn(() => {
     return {
       // eslint-disable-next-line no-empty-function
-      on: jest.fn(() => {})
+      on: jest.fn(() => {}),
     }
   })
 })

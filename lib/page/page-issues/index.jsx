@@ -1,13 +1,13 @@
 import './style.scss'
 
 import {
-  Breadcrumb
-, Container
-, Divider
-, Grid
-, Header
-, Image
-, Segment
+  Breadcrumb,
+  Container,
+  Divider,
+  Grid,
+  Header,
+  Image,
+  Segment,
 } from 'semantic-ui-react'
 import CtrlComponent from 'ctrl-react-component'
 import Navigation from '../../navigation'
@@ -62,18 +62,18 @@ class PageIssues extends CtrlComponent {
             inverted
             textAlign='center'
             style={{
-              fontSize: '4em'
-            , margin: '2em 0 2em'
+              fontSize: '4em',
+              margin: '2em 0 2em',
             }}
           >Issues</Header>
         </Navigation>
         <Segment basic inverted style={{
-          backgroundColor: '#003666'
-        , marginTop: '0'
+          backgroundColor: '#003666',
+          marginTop: '0',
         }}>
           <Container style={{
-            paddingLeft: '1.25em'
-          , paddingRight: '1.25em'
+            paddingLeft: '1.25em',
+            paddingRight: '1.25em',
           }}>
             <Breadcrumb
               style={{margin: '0.5em 0 0.5em'}}
