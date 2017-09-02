@@ -1,6 +1,6 @@
 {
   "name": "panda-spa",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "The SPA for ChetanPanda.com.",
   "main": "panda-spa.jsx",
   "repository": "git@github.com:chetan-panda/panda-spa",
