@@ -89,6 +89,7 @@ class Navigation extends CtrlComponent {
                     color='orange'
                     compact
                     href='https://secure.actblue.com/donate/panda2018'
+                    target='_blank'
                   >Donate</Button>
                 </Menu.Item>
               </Grid>
