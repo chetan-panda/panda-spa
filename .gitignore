@@ -6,3 +6,4 @@
 .nyc_output
 
 !/dist/_redirects
+!/dist/favicon
