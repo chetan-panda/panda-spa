@@ -1,7 +1,15 @@
+import './style.scss'
+
+import facebookSVG from './facebook.svg'
+import twitterSVG from './twitter.svg'
+import youtubeSVG from './youtube.svg'
+import instagramSVG from './instagram.svg'
+
 import {
   Container,
   Icon,
   Segment,
+  Image
 } from 'semantic-ui-react'
 import CtrlComponent from 'ctrl-react-component'
 import React from 'react'
@@ -14,6 +22,7 @@ class Footer extends CtrlComponent {
       <Segment
         basic
         inverted
+        className='footer'
         style={{
           backgroundColor: '#003666',
           paddingBottom: '1.5em',
@@ -21,6 +30,52 @@ class Footer extends CtrlComponent {
         }}
       >
         <Container textAlign='center'>
+          <ul>
+            <li>
+              <a href='https://facebook.com' target='_blank' rel='nofollow'>
+                <Image
+                  size='mini'
+                  src={facebookSVG}
+                  style={{
+                    cursor: 'pointer',
+                  }}
+                />               
+              </a>
+            </li>
+            <li>
+              <a href='https://twitter.com' target='_blank' rel='nofollow'>
+                <Image
+                  size='mini'
+                  src={twitterSVG}
+                  style={{
+                    cursor: 'pointer',
+                  }}
+                />               
+              </a>
+            </li>
+            <li>
+              <a href='https://instagram.com' target='_blank' rel='nofollow'>
+                <Image
+                  size='mini'
+                  src={instagramSVG}
+                  style={{
+                    cursor: 'pointer',
+                  }}
+                />               
+              </a>
+            </li>
+            <li>
+              <a href='https://youtube.com' target='_blank' rel='nofollow'>
+                <Image
+                  size='mini'
+                  src={youtubeSVG}
+                  style={{
+                    cursor: 'pointer',
+                  }}
+                />               
+              </a>
+            </li>
+          </ul>
           <p>
             <b>Paid for by the Committee to Elect Chetan Panda</b>
             <br/>
