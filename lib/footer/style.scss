@@ -1,0 +1,15 @@
+@import 'compass';
+
+.footer {
+  ul {
+    display: inline-block;
+    list-style-type: none;
+    margin-bottom: 1.5rem;
+    padding-left: 0;
+
+    li {
+      float: left;
+      margin: 0 0.5rem;
+    }
+  }
+}
