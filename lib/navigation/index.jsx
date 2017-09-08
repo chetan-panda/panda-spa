@@ -93,7 +93,7 @@ class Navigation extends CtrlComponent {
                   >Donate</Button>
                 </Menu.Item>
               </Grid>
-              <Grid className='taZblet mobile only'>
+              <Grid className='tablet mobile only'>
                 <Dropdown
                   className={isLogoDark ? 'dropdown-dark' : 'dropdown-light'}
                   defaultValue={`/${router.route[router.route.length - 1]}`}

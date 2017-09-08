@@ -113,7 +113,7 @@ exports[`should check default app structure 1`] = `
                 </div>
               </div>
               <div
-                className="ui grid taZblet mobile only"
+                className="ui grid tablet mobile only"
               >
                 <div
                   aria-busy={undefined}
