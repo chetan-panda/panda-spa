@@ -32,7 +32,7 @@ class Footer extends CtrlComponent {
         <Container textAlign='center'>
           <ul>
             <li>
-              <a href='https://facebook.com' target='_blank' rel='nofollow'>
+              <a href='https://www.facebook.com/panda2018/' target='_blank' rel='nofollow'>
                 <Image
                   size='mini'
                   src={facebookSVG}
@@ -43,7 +43,7 @@ class Footer extends CtrlComponent {
               </a>
             </li>
             <li>
-              <a href='https://twitter.com' target='_blank' rel='nofollow'>
+              <a href='https://twitter.com/panda2018TX' target='_blank' rel='nofollow'>
                 <Image
                   size='mini'
                   src={twitterSVG}
@@ -54,7 +54,7 @@ class Footer extends CtrlComponent {
               </a>
             </li>
             <li>
-              <a href='https://instagram.com' target='_blank' rel='nofollow'>
+              <a href='https://www.instagram.com/panda2018tx/?hl=en' target='_blank' rel='nofollow'>
                 <Image
                   size='mini'
                   src={instagramSVG}
@@ -65,7 +65,7 @@ class Footer extends CtrlComponent {
               </a>
             </li>
             <li>
-              <a href='https://youtube.com' target='_blank' rel='nofollow'>
+              <a href='https://www.youtube.com/channel/UClYeJeZI7CT23k0STc5e2Zw' target='_blank' rel='nofollow'>
                 <Image
                   size='mini'
                   src={youtubeSVG}
