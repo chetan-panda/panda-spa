@@ -288,7 +288,7 @@ exports[`should check default app structure 1`] = `
       </div>
     </div>
     <div
-      className="ui basic inverted segment"
+      className="ui basic inverted segment footer"
       style={
         Object {
           "backgroundColor": "#003666",
@@ -300,6 +300,88 @@ exports[`should check default app structure 1`] = `
       <div
         className="ui center aligned container"
       >
+        <ul>
+          <li>
+            <a
+              href="https://www.facebook.com/panda2018/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                alt={undefined}
+                className="ui mini image"
+                height={undefined}
+                src=""
+                style={
+                  Object {
+                    "cursor": "pointer",
+                  }
+                }
+                width={undefined}
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/panda2018TX"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                alt={undefined}
+                className="ui mini image"
+                height={undefined}
+                src=""
+                style={
+                  Object {
+                    "cursor": "pointer",
+                  }
+                }
+                width={undefined}
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/panda2018tx/?hl=en"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                alt={undefined}
+                className="ui mini image"
+                height={undefined}
+                src=""
+                style={
+                  Object {
+                    "cursor": "pointer",
+                  }
+                }
+                width={undefined}
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UClYeJeZI7CT23k0STc5e2Zw"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                alt={undefined}
+                className="ui mini image"
+                height={undefined}
+                src=""
+                style={
+                  Object {
+                    "cursor": "pointer",
+                  }
+                }
+                width={undefined}
+              />
+            </a>
+          </li>
+        </ul>
         <p>
           <b>
             Paid for by the Committee to Elect Chetan Panda

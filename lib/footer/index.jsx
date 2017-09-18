@@ -1,18 +1,17 @@
 import './style.scss'
 
-import facebookSVG from './facebook.svg'
-import twitterSVG from './twitter.svg'
-import youtubeSVG from './youtube.svg'
-import instagramSVG from './instagram.svg'
-
 import {
   Container,
   Icon,
+  Image,
   Segment,
-  Image
 } from 'semantic-ui-react'
 import CtrlComponent from 'ctrl-react-component'
 import React from 'react'
+import facebookSvg from './facebook.svg'
+import instagramSvg from './instagram.svg'
+import twitterSvg from './twitter.svg'
+import youtubeSvg from './youtube.svg'
 
 class Footer extends CtrlComponent {
   renderFiltered() {
@@ -32,47 +31,63 @@ class Footer extends CtrlComponent {
         <Container textAlign='center'>
           <ul>
             <li>
-              <a href='https://www.facebook.com/panda2018/' target='_blank' rel='nofollow'>
+              <a
+                href='https://www.facebook.com/panda2018/'
+                rel='noopener noreferrer'
+                target='_blank'
+              >
                 <Image
                   size='mini'
-                  src={facebookSVG}
+                  src={facebookSvg}
                   style={{
                     cursor: 'pointer',
                   }}
-                />               
+                />
               </a>
             </li>
             <li>
-              <a href='https://twitter.com/panda2018TX' target='_blank' rel='nofollow'>
+              <a
+                href='https://twitter.com/panda2018TX'
+                rel='noopener noreferrer'
+                target='_blank'
+              >
                 <Image
                   size='mini'
-                  src={twitterSVG}
+                  src={twitterSvg}
                   style={{
                     cursor: 'pointer',
                   }}
-                />               
+                />
               </a>
             </li>
             <li>
-              <a href='https://www.instagram.com/panda2018tx/?hl=en' target='_blank' rel='nofollow'>
+              <a
+                href='https://www.instagram.com/panda2018tx/?hl=en'
+                rel='noopener noreferrer'
+                target='_blank'
+              >
                 <Image
                   size='mini'
-                  src={instagramSVG}
+                  src={instagramSvg}
                   style={{
                     cursor: 'pointer',
                   }}
-                />               
+                />
               </a>
             </li>
             <li>
-              <a href='https://www.youtube.com/channel/UClYeJeZI7CT23k0STc5e2Zw' target='_blank' rel='nofollow'>
+              <a
+                href='https://www.youtube.com/channel/UClYeJeZI7CT23k0STc5e2Zw'
+                rel='noopener noreferrer'
+                target='_blank'
+              >
                 <Image
                   size='mini'
-                  src={youtubeSVG}
+                  src={youtubeSvg}
                   style={{
                     cursor: 'pointer',
                   }}
-                />               
+                />
               </a>
             </li>
           </ul>

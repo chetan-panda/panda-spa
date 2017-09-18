@@ -83,7 +83,8 @@
       "json"
     ],
     "moduleNameMapper": {
-      "\\.scss$": "<rootDir>/tests/lib/stub.js"
+      "\\.scss$": "<rootDir>/tests/lib/stubs/object.js",
+      "\\.svg$": "<rootDir>/tests/lib/stubs/string.js"
     },
     "transformIgnorePatterns": [],
     "collectCoverage": true,
