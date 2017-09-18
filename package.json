@@ -21,6 +21,7 @@
     "watch": "./scripts/watch"
   },
   "devDependencies": {
+    "autoprefixer": "^7.1.4",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.0",
     "babel-jest": "^21.0.2",
@@ -53,6 +54,7 @@
     "jsx-loader": "^0.13.2",
     "lodash.transform": "^4.6.0",
     "node-sass": "^4.5.3",
+    "postcss-loader": "^2.0.6",
     "pre-commit": "^1.2.2",
     "prop-types": "^15.5.10",
     "pug": "^2.0.0-rc.4",
