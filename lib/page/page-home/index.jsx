@@ -59,8 +59,8 @@ class PageHome extends CtrlComponent {
           paddingTop: '3em',
         }}>
           <Container text>
-            <iframe width="100%" height="400" src="https://www.youtube.com/embed/d8_vnE8cUtk?rel=0" frameborder="0" allowfullscreen></iframe>
             <Header as='h1' inverted>Why I&rsquo;m Running</Header>
+            <iframe style={{marginBottom: '2rem'}} width="100%" height="400" src="https://www.youtube.com/embed/d8_vnE8cUtk?rel=0" frameborder="0" allowFullScreen></iframe>
             <Markdown source={this.getContent('why')}/>
             <Image src={signatureImg} style={{float: 'right', height: '80px'}}/>
             <br style={{clear: 'both'}}/>
