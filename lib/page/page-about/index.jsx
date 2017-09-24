@@ -85,13 +85,13 @@ class PageAbout extends CtrlComponent {
             paddingBottom: '3em',
             paddingTop: '3em',
           }}>
-            <Container>
-              <Image src={familyImg} style={{width: '100%', marginBottom: '4rem'}} />
+            <Container text>
+              <iframe width="100%" height="400" src="https://www.youtube.com/embed/3J7c90HADOE?rel=0" frameborder="0" allowFullScreen style={{marginBottom: '4rem'}}></iframe>
             </Container>
             <Container text>
-              
-              <p className='first'>I am a Texan and a first-generation American. My family came to America seeking the opportunity for a better life. My mother became an educator. My father worked for IBM before starting his own company. My parents taught me the value of working hard, showing compassion to all, and doing the right thing. Most importantly, they taught me that the American dream is possible and everyone deserves a fair shot at pursuing it.
+              <p className='first' style={{marginBottom: '4rem'}}>I am a Texan and a first-generation American. My family came to America seeking the opportunity for a better life. My mother became an educator. My father worked for IBM before starting his own company. My parents taught me the value of working hard, showing compassion to all, and doing the right thing. Most importantly, they taught me that the American dream is possible and everyone deserves a fair shot at pursuing it.
               </p>
+              <Image src={familyImg} style={{width: '100%', marginBottom: '2rem'}} />
               <Image src={basketballImg} style={{float: 'left', marginRight: '2rem', marginBottom: '2rem', width: '300px'}} />
               <p>I grew up in this community and I've spent my entire life here. I played competitive basketball, studied the piano, and volunteered by coaching, tutoring, and mentoring kids. After high school, I attended the London School of Economics and Georgetown University, where I graduated with a degree in International Economics. Each summer, I always returned from Washington to Texas because I knew I belonged here. So, it was only natural that after college, I came home.
               </p>
