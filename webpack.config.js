@@ -17,7 +17,7 @@ const plugins = [processEnvPlugin]
 
 module.exports = {
   entry: {
-    base: './panda-spa.jsx',
+    base: ["babel-polyfill", './panda-spa.jsx'],
   },
   module: {
     rules: [
