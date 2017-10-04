@@ -1,4 +1,3 @@
-import "babel-polyfill"
 import 'core-js'
 import App from './lib/app'
 import React from 'react'
