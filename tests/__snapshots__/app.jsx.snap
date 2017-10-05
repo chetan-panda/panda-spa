@@ -230,11 +230,6 @@ exports[`should check default app structure 1`] = `
       <div
         className="page"
         id="page-home"
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
       >
         <div
           className="ui hidden divider"
