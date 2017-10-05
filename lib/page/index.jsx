@@ -1,3 +1,4 @@
+import './style.scss'
 import CtrlComponent from 'ctrl-react-component'
 import PropTypes from 'prop-types'
 import React from 'react'
