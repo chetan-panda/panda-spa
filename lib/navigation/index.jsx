@@ -70,6 +70,10 @@ class Navigation extends CtrlComponent {
               >Home</Menu.Item>
               <Menu.Item
                 link
+                onClick={() => router.updateRoute('/about')}
+              >About</Menu.Item>
+              <Menu.Item
+                link
                 onClick={() => router.updateRoute('/issues')}
               >Issues</Menu.Item>
             </Grid>
@@ -105,6 +109,11 @@ class Navigation extends CtrlComponent {
                       key: 'home',
                       text: 'Home',
                       value: '/',
+                    },
+                    {
+                      key: 'about',
+                      text: 'About',
+                      value: '/about',
                     },
                     {
                       key: 'issues',

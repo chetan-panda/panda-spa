@@ -1,6 +1,7 @@
 import CtrlComponent from 'ctrl-react-component'
 import Footer from '../footer'
 import PageHome from '../page/page-home'
+import PageAbout from '../page/page-about'
 import PageIssue from '../page/page-issue'
 import PageIssues from '../page/page-issues'
 import PropTypes from 'prop-types'
@@ -47,8 +48,11 @@ class ContentManager extends CtrlComponent {
           content={this.getContent('pageHome')}
           routeFilter={(route) =>
              route.length === 0
-          || route[0] === 'about'
           }
+        />
+        <PageAbout
+          content={this.getContent('pageAbout')}
+          routeFilter={(route) => route[0] === 'about' && route.length === 1}
         />
         <PageIssues
           content={this.getContent('pageIssues')}
