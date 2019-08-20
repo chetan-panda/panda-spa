@@ -10,6 +10,6 @@ ReactDOM.render(
     apiVersion={env.API_VERSION}
     isProduction={env.NODE_ENV === 'production'}
     socketUrl={env.SOCKET_URL}
-  />
-, document.body.querySelector('#app')
+  />,
+  document.body.querySelector('#app'),
 )

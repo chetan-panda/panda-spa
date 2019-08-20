@@ -17,7 +17,7 @@ test('should check default app structure', () => {
       apiVersion='v0'
       isProduction={false}
       socketUrl='http://api.staging.chetanpanda.com'
-    />
+    />,
   )
 
   const tree = app.toJSON()

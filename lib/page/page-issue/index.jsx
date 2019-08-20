@@ -82,7 +82,7 @@ class PageIssue extends CtrlComponent {
               <Breadcrumb.Divider
                 icon='right angle'
                 onClick={() => router.updateRoute(
-                  `/issues/${this.get('slug')}`
+                  `/issues/${this.get('slug')}`,
                 )}
                 style={{color: 'white'}}
               />
